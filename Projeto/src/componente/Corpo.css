@@ -1,0 +1,45 @@
+.Corpo {
+  display: flex;
+  align-items: center; 
+  padding: 50px;
+  gap: 100px;
+}
+
+.titulo {
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+.titulo .Power {
+  color: red;
+  font-weight: bold;
+}
+
+.introducao {
+  margin-top: 60px;
+  max-width: 600px;
+  text-align: justify;
+  line-height: 1.6;
+  font-size: 1rem;
+  color: #ccc;
+}
+
+.corpo-texto{
+margin: 0px 20px 20px 20px;}
+
+.mySwiper {
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2); /* sombra suave */
+    padding: 1rem;
+    max-width: 600px;
+    margin: 2rem auto;
+}
+
+.mySwiper img {
+    width: 100%;
+}
+
+.mySwiper img:hover {
+    transform: scale(1.02);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.35);
+}
