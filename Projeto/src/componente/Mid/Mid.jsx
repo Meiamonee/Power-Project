@@ -11,8 +11,6 @@ function Mid() {
         <div className='container'>
              <h3 className='subtitulo'>NOVIDADES E MAIS VENDIDOS</h3>
             <div className='tudo'>
-
-
                 <div className='img1'>
                     <img src={img1} alt="" />
                     <h4>JOGUE COMO UMA LENDA</h4>

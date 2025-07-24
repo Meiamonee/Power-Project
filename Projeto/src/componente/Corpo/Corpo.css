@@ -7,8 +7,7 @@
 .Corpo {
   display: flex;
   align-items: center; 
-  padding: 50px;
-  gap: 100px;
+  gap: 80px;
 }
 
 .titulo {
@@ -30,9 +29,6 @@
   font-size: 1rem;
   color: #ccc;
 }
-
-.corpo-texto{
-margin: 0px 20px 20px 20px;}
 
 .mySwiper {
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2); /* sombra suave */
