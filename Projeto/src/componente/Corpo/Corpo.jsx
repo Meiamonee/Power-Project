@@ -1,14 +1,15 @@
-import './Corpo.css';
+import '../Corpo/Corpo.css';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination, Autoplay } from 'swiper/modules'; // Importando Autoplay
 import 'swiper/css';
 import 'swiper/css/pagination';
 
-import Perifericos from '../assets/Perifericos.jpeg';
+import Perifericos from '../../assets/Perifericos.webp';
 
 function Corpo() {
     return (
-        <div className='Corpo'>
+        <div className='container'>
+            <div className='Corpo'>
             <div className='corpo-texto'>
                 <h2 className='titulo'>
                     Descubra a revolução no mundo dos <br /> periféricos com a <span className="Power">Power</span> !
@@ -37,6 +38,7 @@ function Corpo() {
                     <img src={Perifericos} alt="Headset gamer Power" />
                 </SwiperSlide>
             </Swiper>
+        </div>
         </div>
     );
 }

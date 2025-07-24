@@ -1,13 +1,14 @@
-import img1 from '../assets/img1.webp'
-import img2 from '../assets/img2.jpg'
-import img3 from '../assets/img3.webp'
+import img1 from '../../assets/img1.webp';
+import img2 from '../../assets/img2.webp';
+import img3 from '../../assets/img3.webp';
 
-import './Mid.css'
+
+import '../Mid/Mid.css'
 
 function Mid() {
     return (
 
-        <div>
+        <div className='container'>
              <h3 className='subtitulo'>NOVIDADES E MAIS VENDIDOS</h3>
             <div className='tudo'>
 
