@@ -1,4 +1,3 @@
-import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination, Autoplay, Navigation } from 'swiper/modules';
 import '../Down/Down.css';
@@ -6,7 +5,6 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import './Down.css';
 
-// Usando a imagem existente no projeto
 import Perifericos from '../../assets/fone.webp';
 
 function Down() {
