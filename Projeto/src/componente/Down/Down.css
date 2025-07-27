@@ -1,347 +1,204 @@
-/* ===========================================
-   CAROUSEL CONTAINER - CONTROLES PRINCIPAIS
-   =========================================== */
-
 .down-carousel {
-  /* LARGURA: Controla a largura total do carousel */
-  width: 100%; /* Use 100% para largura total ou valores específicos como 800px, 90vw */
-  
-  /* ALTURA: Controla a altura total do carousel */
-  height: 70vh; /* Use vh (viewport height), px fixos, ou auto */
-  min-height: 500px; /* Altura mínima para garantir visibilidade */
-  max-height: 800px; /* Altura máxima para limitar crescimento */
-  
-  /* BACKGROUND: Gradiente de fundo do carousel */
+  width: 100%;
+  height: 70vh;
+  min-height: 500px;
+  max-height: 800px;
   background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #334155 100%);
-  
-  /* POSICIONAMENTO */
   position: relative;
-  overflow: hidden; /* Esconde conteúdo que sai dos limites */
-  
-  /* BORDAS E SOMBRAS */
-  border-radius: 0; /* Use px para bordas arredondadas (ex: 12px) */
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1); /* Sombra externa */
+  overflow: hidden;
+  border-radius: 0;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
 }
-
-/* ===========================================
-   SWIPER CONTAINER - CONTROLES DO SLIDER
-   =========================================== */
 
 .down-swiper {
-  /* DIMENSÕES: Herda do container pai */
   width: 100%;
   height: 100%;
-  
-  /* COMPORTAMENTO DO SWIPER */
-  overflow: hidden; /* Controla se o conteúdo excedente é visível */
+  overflow: hidden;
 }
-
-/* ===========================================
-   SLIDE CONTENT - LAYOUT INTERNO DOS SLIDES
-   =========================================== */
 
 .down-slide-content {
-  /* LAYOUT: Flexbox para organizar elementos */
   display: flex;
-  align-items: center; /* Alinhamento vertical: flex-start, center, flex-end */
-  justify-content: space-between; /* Distribuição horizontal: space-between, center, space-around */
-  
-  /* CONTAINER INTERNO */
-  max-width: 1200px; /* Largura máxima do conteúdo interno */
-  margin: 0 auto; /* Centralização horizontal */
-  
-  /* ESPAÇAMENTO INTERNO */
-  padding: 0 60px; /* Espaçamento lateral (top/bottom left/right) */
-  
-  /* ALTURA */
-  height: 100%; /* Ocupa toda altura disponível */
-  
-  /* POSICIONAMENTO */
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 60px;
+  height: 100%;
   position: relative;
-  z-index: 1; /* Controla sobreposição de elementos */
+  z-index: 1;
 }
-
-/* ===========================================
-   TEXTO DO SLIDE - ÁREA DE CONTEÚDO TEXTUAL
-   =========================================== */
 
 .down-slide-text {
-  /* LAYOUT */
-  flex: 1; /* Ocupa espaço disponível (0, 1, 2 para diferentes proporções) */
-  max-width: 500px; /* Largura máxima do texto */
-  
-  /* POSICIONAMENTO */
-  z-index: 2; /* Garante que o texto fique sobre outros elementos */
+  flex: 1;
+  max-width: 500px;
+  z-index: 2;
 }
-
-/* ===========================================
-   TÍTULO - TIPOGRAFIA E ESTILO DO TÍTULO
-   =========================================== */
 
 .down-slide-title {
-  /* TAMANHO DA FONTE */    
-  font-size: 3rem; /* Use rem, em, px, ou vw para responsividade */
-  
-  /* PESO DA FONTE */
-  font-weight: 700; /* 100-900, ou normal, bold, bolder */
-  
-  /* COR */
-  color: #ffffff; /* Use hex, rgb, rgba, hsl */
-  
-  /* ALTURA DA LINHA */
-  line-height: 1.1; /* Espaçamento entre linhas (1.0 = sem espaço extra) */
-  
-  /* ESPAÇAMENTO */
-  margin-bottom: 24px; /* Espaço abaixo do título */
-  
-  /* TRANSFORMAÇÕES DE TEXTO */
-  text-transform: uppercase; /* uppercase, lowercase, capitalize, none */
-  letter-spacing: -0.02em; /* Espaçamento entre letras (negativo = mais junto) */
-  
-  /* SOMBRA DO TEXTO */
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* x y blur color */
+  font-size: 3rem;
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 1.1;
+  margin-bottom: 24px;
+  text-transform: uppercase;
+  letter-spacing: -0.02em;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
-
-/* ===========================================
-   HIGHLIGHT - TEXTO EM DESTAQUE
-   =========================================== */
 
 .down-slide-highlight {
-  /* COR DE DESTAQUE */
-  color: #3b82f6; /* Azul - mude para sua cor preferida */
-  
-  /* LAYOUT */
-  display: block; /* block, inline, inline-block */
-  
-  /* EFEITOS */
-  text-shadow: 0 0 20px rgba(59, 130, 246, 0.3); /* Brilho colorido */
+  color: #3b82f6;
+  display: block;
+  text-shadow: 0 0 20px rgba(59, 130, 246, 0.3);
 }
-
-/* ===========================================
-   DESCRIÇÃO - TEXTO SECUNDÁRIO
-   =========================================== */
 
 .down-slide-description {
-  /* TAMANHO DA FONTE */
-  font-size: 1.1rem; /* Ajuste conforme necessário */
-  
-  /* COR */
-  color: rgba(255, 255, 255, 0.8); /* Branco semi-transparente */
-  
-  /* ALTURA DA LINHA */
-  line-height: 1.6; /* Espaçamento entre linhas para legibilidade */
-  
-  /* ESPAÇAMENTO */
-  margin-bottom: 32px; /* Espaço abaixo da descrição */
-  
-  /* LARGURA */
-  max-width: 400px; /* Controla quebra de linha */
+  font-size: 1.1rem;
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 1.6;
+  margin-bottom: 32px;
+  max-width: 400px;
 }
 
-/* ===========================================
-   IMAGEM DO SLIDE - ÁREA DA IMAGEM
-   =========================================== */
-
 .down-slide-image {
-  /* LAYOUT */
-  flex: 1; /* Proporção em relação ao texto */
+  flex: 1;
   display: flex;
-  justify-content: center; /* Centralização horizontal da imagem */
-  align-items: center; /* Centralização vertical da imagem */
-  
-  /* POSICIONAMENTO */
+  justify-content: center;
+  align-items: center;
   position: relative;
   z-index: 1;
 }
 
 .down-slide-image img {
-  /* DIMENSÕES DA IMAGEM */
-  max-width: 100%; /* Não excede o container */
-  max-height: 450px; /* Altura máxima em pixels */
-  width: auto; /* Mantém proporção */
-  height: auto; /* Mantém proporção */
-  
-  /* COMPORTAMENTO */
-  object-fit: contain; /* contain, cover, fill, scale-down, none */
-  
-  /* EFEITOS VISUAIS */
-  filter: drop-shadow(0 20px 40px rgba(0, 0, 0, 0.3)); /* Sombra da imagem */
-  
-  /* TRANSFORMAÇÕES */
-  transform: scale(1); /* Escala (1 = tamanho normal, 1.1 = 10% maior) */
-  transition: transform 0.3s ease; /* Animação suave */
+  max-width: 100%;
+  max-height: 450px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  filter: drop-shadow(0 20px 40px rgba(0, 0, 0, 0.3));
+  transform: scale(1);
+  transition: transform 0.3s ease;
 }
 
 .down-slide-image img:hover {
-  transform: scale(1.05); /* Efeito ao passar o mouse */
+  transform: scale(1.05);
 }
-
-/* ===========================================
-   NAVEGAÇÃO - BOTÕES ANTERIOR/PRÓXIMO
-   =========================================== */
 
 .down-swiper .swiper-button-next,
 .down-swiper .swiper-button-prev {
-  /* COR DOS BOTÕES */
-  color: #ffffff; /* Cor dos ícones */
-  
-  /* TAMANHO DOS BOTÕES */
-  width: 50px; /* Largura do botão */
-  height: 50px; /* Altura do botão */
-  
-  /* POSICIONAMENTO */
-  margin-top: -25px; /* Ajuste vertical (metade da altura) */
-  
-  /* FUNDO DOS BOTÕES */
-  background: rgba(0, 0, 0, 0.2); /* Fundo semi-transparente */
-  border-radius: 50%; /* Botões redondos */
-  
-  /* TRANSIÇÃO */
+  color: #ffffff;
+  width: 50px;
+  height: 50px;
+  margin-top: -25px;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
   transition: all 0.3s ease;
 }
 
 .down-swiper .swiper-button-next:after,
 .down-swiper .swiper-button-prev:after {
-  /* TAMANHO DOS ÍCONES */
-  font-size: 20px; /* Tamanho do ícone */
-  font-weight: bold; /* Peso da fonte */
+  font-size: 20px;
+  font-weight: bold;
 }
 
 .down-swiper .swiper-button-next:hover,
 .down-swiper .swiper-button-prev:hover {
-  /* EFEITO HOVER */
-  color: #3b82f6; /* Cor ao passar o mouse */
-  background: rgba(59, 130, 246, 0.2); /* Fundo colorido */
-  transform: scale(1.1); /* Aumenta o botão */
+  color: #3b82f6;
+  background: rgba(59, 130, 246, 0.2);
+  transform: scale(1.1);
 }
 
-/* ===========================================
-   PAGINAÇÃO - INDICADORES DOS SLIDES
-   =========================================== */
-
 .down-swiper .swiper-pagination {
-  /* POSICIONAMENTO */
-  bottom: 30px; /* Distância da parte inferior */
-  
-  /* POSICIONAMENTO PERSONALIZADO */
-  /* left: 50%; transform: translateX(-50%); para centralizar */
+  bottom: 30px;
 }
 
 .down-swiper .swiper-pagination-bullet {
-  /* TAMANHO DOS INDICADORES */
-  width: 12px; /* Largura dos pontos */
-  height: 12px; /* Altura dos pontos */
-  
-  /* COR E TRANSPARÊNCIA */
-  background: rgba(255, 255, 255, 0.3); /* Cor dos pontos inativos */
-  
-  /* ESPAÇAMENTO */
-  margin: 0 6px; /* Espaço entre os pontos */
-  
-  /* TRANSIÇÃO */
+  width: 12px;
+  height: 12px;
+  background: rgba(255, 255, 255, 0.3);
+  margin: 0 6px;
   transition: all 0.3s ease;
-  
-  /* FORMATO */
-  border-radius: 50%; /* Pontos redondos (0 para quadrados) */
+  border-radius: 50%;
 }
 
 .down-swiper .swiper-pagination-bullet-active {
-  /* COR DO PONTO ATIVO */
-  background: #3b82f6; /* Cor do ponto ativo */
-  
-  /* TRANSFORMAÇÃO */
-  transform: scale(1.2); /* Aumenta o ponto ativo */
-  
-  /* EFEITO BRILHO */
+  background: #3b82f6;
+  transform: scale(1.2);
   box-shadow: 0 0 10px rgba(59, 130, 246, 0.5);
 }
 
-/* ===========================================
-   RESPONSIVIDADE - ADAPTAÇÕES PARA MOBILE
-   =========================================== */
-
-/* TABLETS E TELAS MÉDIAS */
 @media (max-width: 768px) {
   .down-carousel {
-    height: 60vh; /* Reduz altura em tablets */
+    height: 60vh;
     min-height: 450px;
   }
-  
+
   .down-slide-content {
-    flex-direction: column; /* Empilha texto e imagem */
-    text-align: center; /* Centraliza texto */
-    padding: 40px 20px; /* Reduz padding lateral */
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 20px;
     justify-content: center;
   }
-  
+
   .down-slide-text {
-    max-width: 100%; /* Remove limitação de largura */
-    margin-bottom: 30px; /* Espaço entre texto e imagem */
+    max-width: 100%;
+    margin-bottom: 30px;
   }
-  
+
   .down-slide-title {
-    font-size: 2.5rem; /* Reduz tamanho da fonte */
+    font-size: 2.5rem;
   }
-  
+
   .down-slide-description {
     font-size: 1rem;
     max-width: 100%;
   }
-  
+
   .down-slide-image img {
-    max-height: 300px; /* Reduz altura da imagem */
+    max-height: 300px;
   }
 }
 
-/* SMARTPHONES */
 @media (max-width: 480px) {
   .down-carousel {
-    height: 50vh; /* Altura menor para smartphones */
+    height: 50vh;
     min-height: 400px;
   }
-  
+
   .down-slide-content {
-    padding: 20px 15px; /* Padding ainda menor */
+    padding: 20px 15px;
   }
-  
+
   .down-slide-title {
-    font-size: 2rem; /* Fonte menor */
+    font-size: 2rem;
     margin-bottom: 16px;
   }
-  
+
   .down-slide-description {
     font-size: 0.9rem;
     margin-bottom: 20px;
   }
-  
+
   .down-slide-image img {
     max-height: 250px;
   }
-  
-  /* BOTÕES DE NAVEGAÇÃO MENORES */
+
   .down-swiper .swiper-button-next,
   .down-swiper .swiper-button-prev {
     width: 40px;
     height: 40px;
     margin-top: -20px;
   }
-  
+
   .down-swiper .swiper-button-next:after,
   .down-swiper .swiper-button-prev:after {
     font-size: 16px;
   }
 }
 
-/* ===========================================
-   PERSONALIZAÇÕES AVANÇADAS
-   =========================================== */
-
-/* Para mudar a velocidade de transição entre slides */
 .down-swiper .swiper-slide {
-  transition: transform 0.3s ease; /* Controla suavidade da transição */
+  transition: transform 0.3s ease;
 }
 
-/* Para adicionar efeitos de fade ou outros */
 .down-swiper.swiper-fade .swiper-slide {
   opacity: 0;
   transition: opacity 0.3s ease;
@@ -351,7 +208,6 @@
   opacity: 1;
 }
 
-/* Para carousel em tela cheia */
 .down-carousel.fullscreen {
   height: 100vh;
   width: 100vw;
