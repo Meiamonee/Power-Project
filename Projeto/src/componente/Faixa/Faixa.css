@@ -1,0 +1,45 @@
+.container-faixa {
+    overflow: hidden;
+    width: 100%;
+    background-color: white;
+
+    /* Alinha todo o conteúdo da faixa verticalmente */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0; /* espaço em cima e embaixo opcional */
+}
+
+.imagem-faixas {
+    display: flex;
+    align-items: center; /* Alinha as imagens no centro vertical */
+    gap: 40px;
+    animation: scroll-left 20s linear infinite;
+    width: max-content;
+}
+
+.imagem-faixas img {
+    height: 130px;
+    width: 100px; /* ajuste conforme preferir */
+    object-fit: contain;
+    display: block;
+}
+.hyperx-margin {
+  margin-top: 10px; /* ou o valor que quiser */
+}
+
+
+/* Deixa uma imagem preta (2ª e 11ª) */
+.imagem-faixas img:nth-child(2),
+.imagem-faixas img:nth-child(11) {
+    filter: brightness(0%) saturate(0%);
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}

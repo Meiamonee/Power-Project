@@ -1,111 +1,88 @@
-body {
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+
+body, html, #root {
+  height: 100%;
   font-family: "Inter", sans-serif;
 }
 
-.power-azul {
+.main-container {
+  position: relative;
+  width: 100%;
+  height: 70vh;
+  overflow: hidden;
+  color: white;
+}
+
+.header {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.8), transparent);
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 24px;
+}
+
+nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+.background-swiper {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.slide-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.4);
+}
+
+.center-text {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: translateY(-50%);
+  z-index: 5;
+  max-width: 600px;
+}
+
+.center-text h1 {
+  font-size: 36px;
+  margin-bottom: 50px;
+  line-height: 1.4;
+}
+
+.center-text .highlight {
+
   background: linear-gradient(to right, #00f2fe, #4facfe);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  color: transparent; 
+  color: transparent; /* Fallback */
   font-weight: bold;
-  display: inline-block; 
+  display: inline-block; /* evita bugs em algumas engines */
 }
 
-
-.logo-nome {
-  margin-left: 30px;
-  font-family: "Oswald", sans-serif;
-}
-
-.carrosel-slide {
-  height: 500px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.header-overlay {
-  position: absolute;
-  margin: 10px 10px 10px 0;
-  width: 100%;
-  color: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  /* separa o título dos links */
-  z-index: 15;
-}
-
-.overlay {
-  margin-top: 30px;
-  position: absolute;
-  top: 120px;
-  display: flex;
-  flex-direction: column;
-  margin-left: 20px;
-  z-index: 15;
-  color: #fff;
-  text-align: center;
-  pointer-events: none;
-  gap: 20px;
-
-}
-
-.carrosel-container {
-  position: relative;
-}
-
-.carrosel-overlay-bg {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 500px;
-  /* igual à altura do .carrosel-slide */
-  background: rgba(0, 0, 0, 0.5);
-  /* preto com 50% de opacidade */
-  z-index: 12;
-  /* entre o slide e a .overlay */
-  pointer-events: none;
-}
-
-.title {
-  text-align: center;
-}
-
-.descricao {
-  text-align: justify;
-  max-width: 700px;
-  margin: 0 auto;
-  padding: 50px;
-}
-
-.teste {
-  display: flex;
-  gap: 24px;
-  font-family: "Oswald", sans-serif;
-  margin-right: 30px;
-}
-
-
-
-/* Aumenta o tamanho dos bullets da paginação do Swiper */
-.swiper-pagination-bullet {
-  width: 14px;
-  height: 14px;
-  background-color: white;
-  /* você pode mudar a cor também */
-  opacity: 0.7;
-  transition: transform 0.3s ease;
-}
-
-/* Bullet ativo com destaque */
-.swiper-pagination-bullet-active {
-  background-color: #3b82f6;
-  /* ou a cor da sua identidade visual */
-  transform: scale(1.3);
-  opacity: 1;
+.center-text p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #dddddd;
 }

@@ -10,54 +10,51 @@ import Teclado from '../../assets/teclado.webp'
 
 
 function App() {
+
+    const slides = [Perifericos, Controle, Teclado];
+
+
     return (
-        <div className='carrosel-container'>
-            <div className="header-overlay">
-                <h1 className='logo-nome'>POWER</h1>
-                <div className='teste'>
-                    <p>SOBRE</p>
-                    <p>CONTATO</p>
-                </div>
-            </div>
+        <div className="main-container">
+            <header className="header">
+                <div className="logo">POWER</div>
+                <nav>
+                    <a href="#sobre">SOBRE</a>
+                    <a href="#contato">CONTATO</a>
+                </nav>
+            </header>
 
             <Swiper
-                modules={[Pagination, Autoplay]}
-                pagination={{ 
-                    clickable: true,
-                    bulletClass: 'swiper-pagination-bullet',
-                    bulletActiveClass: 'swiper-pagination-bullet-active'
-                }}
-                spaceBetween={20}
+                className="background-swiper"
+                modules={[Autoplay]}
+                autoplay={{ delay: 4000 }}
+                loop={true}
                 slidesPerView={1}
-                autoplay={{
-                    delay: 4000,
-                    disableOnInteraction: false,
-                }}
             >
-                <SwiperSlide>
-                    <div className='carrosel-slide' style={{ background: '#ffb3ba' }}>
-                        <img src={Perifericos} alt="periferico" />
-                    </div>
-                </SwiperSlide>
-
-                <SwiperSlide>
-                    <div className='carrosel-slide' style={{ background: '#bae1ff' }}>
-                        <img src={Controle} alt="" />
-                    </div>
-                </SwiperSlide>
-
-                <SwiperSlide>
-                    <div className='carrosel-slide' style={{ background: '#baffc9' }}>
-                        <img src={Teclado} alt="" />
-                    </div>
-                </SwiperSlide>
+                {slides.map((src, index) => (
+                    <SwiperSlide key={index}>
+                        <img src={`${src}?auto=format&fit=crop&w=1600&q=80`} alt={`slide ${index}`} className="slide-img" />
+                    </SwiperSlide>
+                ))}
             </Swiper>
-            <div className='carrosel-overlay-bg'></div>
-            <div className='overlay'>
-                <h2 className='title'>Descubra a revolução no mundo dos <br /> periféricos com a <strong className='power-azul'>Power</strong></h2>
-                <p className='descricao'>Aqui, tecnologia de ponta encontra inovação para transformar sua experiência digital. De teclados mecânicos precisos a mouses ergonômicos de alta performance, oferecemos produtos que elevam seu setup a um novo nível. Não se contente com o comum, escolha a excelência que só a Power proporciona. Explore agora e sinta a diferença!</p>
+
+            <div className="center-text">
+                <h1>
+                    Descubra a revolução no mundo dos
+                    periféricos com a <span className="highlight">Power</span>
+                </h1>
+                <p>
+                    Aqui, tecnologia de ponta encontra inovação para transformar sua experiência digital. De teclados mecânicos
+                    precisos a mouses ergonômicos de alta performance, oferecemos produtos que elevam seu setup a um novo nível.
+                    Não se contente com o comum, escolha a excelência que só a Power proporciona. Explore agora e sinta a diferença!
+                </p>
+                
             </div>
+
         </div>
+
+
+
     );
 }
 
