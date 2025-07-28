@@ -6,6 +6,10 @@ import 'swiper/css/pagination';
 import './Down.css';
 
 import Perifericos from '../../assets/fone.webp';
+import teclamouse from '../../assets/teclado-mouse.webp';
+
+
+
 
 function Down() {
     const slides = [

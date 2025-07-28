@@ -2,12 +2,13 @@
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
+  
 }
 
 .tudo {
     display: flex;
-    padding: 80px;
-    gap: 40px;
+    padding: 100px;
+    gap: 50px ;
     justify-content: center;
     text-align: justify;
 }
@@ -19,20 +20,20 @@
     align-items: center;
 }
 
-.img1 {
-    display: flex;
-    flex-direction: column;
-    width: 400px;
+img {
+  width: 400px;
+  height: 350px; 
+  object-fit: cover; 
+  display: block;
+  filter: drop-shadow(0 20px 40px rgba(0, 0, 0, 0.3));
+
 }
 
-.img2 {
-    display: flex;
-    flex-direction: column;
-    width: 400px;
+h4{
+    font-family: 'Oswald', sans-serif;
 }
 
-.img3 {
-    display: flex;
-    flex-direction: column;
-    width: 400px;
+
+p{
+    margin-top: 20px;
 }
