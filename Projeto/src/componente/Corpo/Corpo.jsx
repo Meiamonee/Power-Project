@@ -21,6 +21,7 @@ function App() {
                 <nav>
                     <a href="#sobre">SOBRE</a>
                     <a href="#contato">CONTATO</a>
+                    <a href="#produtos">PRODUTOS</a>
                 </nav>
             </header>
 
@@ -30,13 +31,19 @@ function App() {
                 autoplay={{ delay: 4000 }}
                 loop={true}
                 slidesPerView={1}
+               
             >
                 {slides.map((src, index) => (
                     <SwiperSlide key={index}>
-                        <img src={`${src}?auto=format&fit=crop&w=1600&q=80`} alt={`slide ${index}`} className="slide-img" />
+                        <img
+                            src={`${src}?auto=format&fit=crop&w=1600&q=80`}
+                            alt={`slide ${index}`}
+                            className="slide-img"
+                        />
                     </SwiperSlide>
                 ))}
             </Swiper>
+
 
             <div className="center-text">
                 <h1>
@@ -48,7 +55,7 @@ function App() {
                     precisos a mouses ergonômicos de alta performance, oferecemos produtos que elevam seu setup a um novo nível.
                     Não se contente com o comum, escolha a excelência que só a Power proporciona. Explore agora e sinta a diferença!
                 </p>
-                
+
             </div>
 
         </div>
