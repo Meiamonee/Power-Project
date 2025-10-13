@@ -5,6 +5,8 @@ import Mid from './componente/Mid/Mid'
 import Down from './componente/Down/Down'
 import Footer from './componente/Footer/Footer'
 import Faixa from './componente/Faixa/Faixa'
+import { Link } from "react-router-dom";
+
 
 function App() {
   return (
