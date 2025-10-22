@@ -30,52 +30,6 @@ A aplicação segue a organização moderna do React, separando componentes de p
          └── main.jsx        # Ponto de entrada da aplicação (renderiza o App)
      └── package.json
 
-  
-⚙️ Instalação e Execução
-
-Siga as instruções abaixo para configurar e executar o projeto em sua máquina local.
-
-Pré-requisitos
-
-Certifique-se de ter o Node.js instalado.
-
-Com certeza! Um bom README.md é essencial para documentar o seu projeto, explicar sua funcionalidade e fornecer instruções de uso para outros desenvolvedores (ou para você mesmo no futuro!).
-
-Aqui está um modelo completo de README.md formatado em Markdown, pronto para você copiar e colar no seu projeto, com seções customizadas para a sua estrutura de arquivos:
-
-💻 Power Project
-
-Bem-vindo ao Power Project, um projeto de e-commerce focado em componentes e produtos gamer. Este projeto utiliza React com roteamento para criar uma estrutura de página inicial e uma galeria de produtos.
-
-🚀 Tecnologias Utilizadas
-
-    React: Biblioteca JavaScript para construção de interfaces de usuário.
-
-    Vite: Ferramenta de build e desenvolvimento ultrarrápida (Assumido pelo uso do main.jsx).
-
-    React Router DOM (v6): Para roteamento entre as páginas (Home e Produtos).
-
-    JavaScript (ES6+)
-
-    CSS
-
-📂 Estrutura do Projeto
-
-A aplicação segue a organização moderna do React, separando componentes de página, componentes reutilizáveis e dados estáticos.
-
-[+] Projeto
- ├── node_modules/
- ├── public/
- ├── src/
-    ├── assets/
-    ├── componente/     # Componentes reutilizáveis (Corpo, Mid, Footer, etc.)
-    ├── data/           # Dados estáticos (produtos.json)
-    ├── pages/          # Componentes de página (Home, Produtos)
-    ├── style/          # Estilos globais
-    ├── App.jsx         # Componente raiz e gerenciador de rotas
-    └── main.jsx        # Ponto de entrada da aplicação (renderiza o App)
- └── package.json
-
 ⚙️ Instalação e Execução
 
 Siga as instruções abaixo para configurar e executar o projeto em sua máquina local.
