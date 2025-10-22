@@ -4,8 +4,6 @@ import mouse from '../../assets/mouse.webp';
 import newmouse from '../../assets/newmouse.webp';
 
 
-
-
 import '../Mid/Mid.css'
 
 function Mid() {
