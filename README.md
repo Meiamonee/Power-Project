@@ -13,19 +13,21 @@ Bem-vindo ao Power Project, um projeto de e-commerce focado em componentes e pro
 
     CSS
 
-  ;
   📂 Estrutura do Projeto
-  A aplicação segue a organização moderna do React, separando componentes de página, componentes reutilizáveis e dados estáticos.
 
-  [+] Projeto
- ├── node_modules/
- ├── public/
- ├── src/
-    ├── assets/
-    ├── componente/     # Componentes reutilizáveis (Corpo, Mid, Footer, etc.)
-    ├── data/           # Dados estáticos (produtos.json)
-    ├── pages/          # Componentes de página (Home, Produtos)
-    ├── style/          # Estilos globais
-    ├── App.jsx         # Componente raiz e gerenciador de rotas
-    └── main.jsx        # Ponto de entrada da aplicação (renderiza o App)
- └── package.json
+A aplicação segue a organização moderna do React, separando componentes de página, componentes reutilizáveis e dados estáticos.
+
+    [+] Projeto
+     ├── node_modules/
+     ├── public/
+     ├── src/
+         ├── assets/
+         ├── componente/     # Componentes reutilizáveis (Corpo, Mid, Footer, etc.)
+         ├── data/           # Dados estáticos (produtos.json)
+         ├── pages/          # Componentes de página (Home, Produtos)
+         ├── style/          # Estilos globais
+         ├── App.jsx         # Componente raiz e gerenciador de rotas
+         └── main.jsx        # Ponto de entrada da aplicação (renderiza o App)
+     └── package.json
+
+  
